@@ -1,3 +1,10 @@
+@import "_variables";
+
+@mixin sizes($w,$h) {
+    width: $w ;
+    height: $h;
+    //utilizado en la linea 605 .iframe
+}
 *{
     box-sizing: border-box;
     margin: 0;
@@ -6,32 +13,32 @@
 }
 body{
 background-color: antiquewhite;
-color: black;
-font-size: 1rem;
+color: $ColorBody;
+font-size: $FontSizeBody;
 font-family: 'Oswald';
 }
 
 
 h1{
-    color: #425465;
-    font-family: 'Advent Pro', sans-serif;
-    font-weight: 800;
-    display: flex;
-    justify-content: center;
+    color: map-get($estilos_h1 ,color );
+    font-family: map-get($estilos_h1 ,font-family );
+    font-weight: map-get($estilos_h1 ,font-weight );
+    display: map-get($estilos_h1 ,display );
+    justify-content: map-get($estilos_h1 ,justify-content );
     position: absolute;
     left: 35rem;
     top: 2rem;
-    font-size: 2.5rem;
+    font-size: $FontSizeH1;
 }
 
 h3{
-    font-family: 'Oswald', sans-serif;
-    font-weight: 400;
+    font-family:map-get($estilos_h3 ,font-family );
+    font-weight: map-get($estilos_h3 ,font-weight );
     
 }
 
 h2{
-color: #425465;
+color: map-get($estilos_h2 ,color );
 }
 
 
@@ -45,9 +52,8 @@ ul {
 }
 
 a{
-    color: #425465;
+    color: $Color_a;
     text-decoration: slategray;
-
 }
 .nav-menu {
     background: white;
@@ -94,7 +100,7 @@ a{
 }
 
 .nav-menu ul li a:hover {
-border-bottom: solid rgb(0, 0, 0) 2px;
+border-bottom: $border-nav-menu-a;
 }
 
 .container__first {
@@ -564,18 +570,24 @@ font-size: 1.3rem;
     color: rgb(209, 3, 3);
 
 }
-.CardProduct__description__action{
+a{
     padding-top: 10px;
     display: inline-block;
     text-align: center;
-    font-size: 1.3rem;
-    color: white;
-    background-color: #0365a7a8;
+    font-size: 1rem;
+    color: #425465;
+        
+}
+.CardProduct__description__action{
+    @extend a;
+    background-color: skyblue;
     border-radius: 3rem;
     width: 60%;
     margin-left: 60px;
     padding-bottom: 10px;
+   
 }
+
 .video{
     width: 60%;
     display: inline-block;
@@ -591,10 +603,10 @@ font-size: 1.3rem;
     justify-content: center;
 }
 .iframe{
-    width: 1000px;
-    height: 600px;
+   @include sizes(1000px,600px );
     padding-bottom: 20px;
 }
+
 
 /*Para celular!*/
 @media (max-width:700px ) {
@@ -979,4 +991,5 @@ font-size: 1.3rem;
         text-shadow: 2px 1px 2px black;
         color: azure;
     }
+    
 }

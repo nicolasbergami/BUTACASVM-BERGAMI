@@ -12,7 +12,7 @@ body {
 
 h1 {
   color: #425465;
-  font-family: 'Advent Pro', sans-serif;
+  font-family: "Advent Pro" sans-serif;
   font-weight: 800;
   display: flex;
   justify-content: center;
@@ -22,7 +22,7 @@ h1 {
   font-size: 2.5rem; }
 
 h3 {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald" sans-serif;
   font-weight: 400; }
 
 h2 {
@@ -34,7 +34,7 @@ h2 {
 ul {
   list-style: none; }
 
-a {
+a, .CardProduct__description__action {
   color: #425465;
   text-decoration: slategray; }
 
@@ -68,10 +68,10 @@ a {
   display: flex;
   padding-bottom: 3rem; }
 
-.nav-menu ul li a {
+.nav-menu ul li a, .nav-menu ul li .CardProduct__description__action {
   padding: 5px; }
 
-.nav-menu ul li a:hover {
+.nav-menu ul li a:hover, .nav-menu ul li .CardProduct__description__action:hover {
   border-bottom: solid black 2px; }
 
 .container__first {
@@ -519,13 +519,15 @@ a {
   display: block;
   color: #d10303; }
 
-.CardProduct__description__action {
+a, .CardProduct__description__action {
   padding-top: 10px;
   display: inline-block;
   text-align: center;
-  font-size: 1.3rem;
-  color: white;
-  background-color: #0365a7a8;
+  font-size: 1rem;
+  color: #425465; }
+
+.CardProduct__description__action {
+  background-color: skyblue;
   border-radius: 3rem;
   width: 60%;
   margin-left: 60px;
