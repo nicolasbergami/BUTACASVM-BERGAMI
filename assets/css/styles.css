@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/*se usan en el style.scss*/
+/*estilos para blog, sillas y contact*/
+/*correr el sass: npm run watch-css */
 * {
   box-sizing: border-box;
   margin: 0;
