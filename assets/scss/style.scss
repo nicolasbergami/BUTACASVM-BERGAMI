@@ -1,5 +1,6 @@
 @import "_variables";
-
+/*estilos para blog, sillas y contact*/
+/*correr el sass: npm run watch-css */
 @mixin sizes($w,$h) {
     width: $w ;
     height: $h;
@@ -11,6 +12,7 @@
     padding: 0;
 
 }
+
 body{
 background-color: antiquewhite;
 color: $ColorBody;
