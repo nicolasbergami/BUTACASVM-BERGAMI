@@ -1,0 +1,148 @@
+/*index y nosotros.html*/
+.navbar {
+  box-shadow: 2px 2px 5px rgb(0, 0, 0);
+  opacity: 0.9;
+}
+
+.navbar .nav-item .nav-link {
+  color: rgb(253, 4, 4);
+}
+
+
+.main-header {
+  position: relative;
+  color: antiquewhite;
+}
+
+.background-overlay {
+  background: antiquewhite;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.form-control, .btn{
+  border-radius: 0;
+}
+
+.team, footer {
+  background-color: #425465;
+}
+a{
+  color: black;
+}
+h1{
+  color: #425465;
+  font-size: 3rem;
+}
+p{
+  color: black;
+}
+h2{
+  color: white;
+  text-align: center;
+  justify-content: center;
+}
+.p__about{
+  color: antiquewhite;
+  font-size: 1rem;
+  text-align: center;
+  justify-content: center;
+}
+.newsletter {
+  background-color: #425465;
+  height: 150px;
+}
+h3{
+  color: antiquewhite;
+}
+.py-3 {
+  background-color: #425465;
+}
+.card{
+  background-color: white;
+  height: 10rem;
+  border-radius: 3rem;
+  margin-top: 1rem;
+}
+.h3-card{
+  color: #425465;
+}
+.container-fluid{
+  background: url(../img/FONDOBUTACAS.png);
+}
+.card-max{
+  height: 25rem;
+  border-radius: 3rem;
+  margin-top: 1rem;
+}
+.boton1{
+ 
+  border-radius: 2rem;
+  text-align: center;
+  justify-content: center;
+  width: 10rem;
+}
+.p-box{
+ 
+  font-size: 1.2rem;
+}
+.h3-box{
+  padding-top: 2rem;
+}
+.location{
+  height: 2rem;
+}
+.cohete{
+  height: 3rem;
+}
+.section-2{
+  margin-top: 2rem;
+}
+.p-5{
+  justify-content: center;
+  text-align: center;
+}
+
+.h2-questions{
+  color: #425465;
+  font-weight: 600;
+}
+.p__nosotros{
+font-size: 1.3rem;
+text-align: left;
+}
+.span__p{
+  text-decoration: underline;
+}
+a :hover{
+  border-bottom: solid rgb(0, 0, 0) 2px;
+}
+li.nav-item :hover{
+  border-bottom: solid rgb(0, 0, 0) 2px;
+}
+.p__footer{
+  color: aliceblue;
+  font-size: 1.1rem;
+}
+.h3__nosotros{
+  color: #425465;
+}
+.carousel{
+  
+  background-color: #425465;
+}
+.carousel-inner{
+  justify-content: center;
+  align-items: center;
+  
+}
+.carousel-item{
+  align-items: center;
+  
+ }
+ .d-block{
+   align-items: center;
+ }
+ 
