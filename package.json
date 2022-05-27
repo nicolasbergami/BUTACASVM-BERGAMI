@@ -1,0 +1,29 @@
+{
+  "name": "butacasvm-bergami",
+  "version": "1.0.0",
+  "description": "proyecto coderhouse butacasvm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss assets/scss/style.scss assets/css/styles.css",
+    "compile-css":"node-sass --include-path scss assets/scss/_main.scss assets/css/main.css",
+    "cont-css":"node-sass --include-path scss assets/scss/_contact.scss assets/css/styles_contact.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "main-css": "nodemon -e scss -x \"npm run compile-css\"",
+    "contact-css": "nodemon -e scss -x \"npm run cont-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolasbergami/BUTACASVM-BERGAMI.git"
+  },
+  "author": "Nicolas Bergami",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicolasbergami/BUTACASVM-BERGAMI/issues"
+  },
+  "homepage": "https://github.com/nicolasbergami/BUTACASVM-BERGAMI#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}
